@@ -1,73 +1,95 @@
-<!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ChatGPT — Página Inicial</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOV.BR - Portal do Governo Federal</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main>
-    <header role="banner">
-      <h1>
-        <abbr title="ChatGPT">💬</abbr> ChatGPT
-      </h1>
-      <nav role="navigation" aria-label="Navegação principal">
-        <ul>
-          <li><a href="#login">Entrar</a></li>
-          <li><a href="#cadastro">Cadastre-se</a></li>
-        </ul>
-      </nav>
+    <a href="#main-content" class="topo">Pular para o conteúdo</a>
+
+    <!-- HEADER -->
+    <header aria-label="gov.br">
+        <h1>gov.br</h1>
+        <nav>
+            <ul class="links-nav">
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Institucional</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="hero" aria-labelledby="hero-title">
-      <header>
-        <h2 id="hero-title">ChatGPT</h2>
-        <p class="lead">O assistente de IA que ajuda você a escrever, aprender, criar e muito mais.</p>
-        <form class="search" action="#" method="get" role="search" aria-label="Início da conversa">
-          <label>
-            <input type="search" name="q" placeholder="Envie uma mensagem para começar..." aria-label="Campo de entrada">
-          </label>
-          <button type="submit" aria-label="Enviar mensagem">→</button>
-        </form>
-      </header>
-    </section>
+    <!-- MAIN -->
+    <main>
+        <!-- HERO -->
+        <section class="welcome">
+            <h1>Bem-vindo ao GOV.BR</h1>
+            <p>Portal do Governo Federal com serviços e informações para todos os cidadãos.</p>
+            <a href="#" class="botao1">Acesse os serviços</a>
+        </section>
 
-    <section class="info">
-      <article>
-        <h3>Exemplos</h3>
-        <ul>
-          <li>✍️ Escreva um texto com base em um tema</li>
-          <li>💡 Gere ideias para um projeto criativo</li>
-          <li>🧠 Explique um conceito difícil de forma simples</li>
-        </ul>
-      </article>
+        <!-- SERVIÇOS -->
+        <section class="servicos">
+            <h2></br>Principais Serviços</h2>
+            
+            <article class="grade-servicos">
+                <img src="img/cnhDigital.jpg" alt="Carteira Nacional de Habilitação">
+                <h3>CNH Digital</h3>
+                <p>Solicite e acompanhe sua Carteira Nacional de Habilitação.</p>
+            </article>
+            <article class="grade-servicos">
+                <img src="img/certidaoNascimento.jfif" alt="Certidão de Nascimento">
+                <h3>Certidão de Nascimento</h3>
+                <p>Emita sua certidão de nascimento e outros documentos civis.</p>
+            </article>
+            <article class="grade-servicos">
+                <img src="img/benefiSociais.jfif" alt="Benefícios sociais">
+                <h3>Benefícios Sociais</h3>
+                <p>Consulta e solicitação de auxílios do governo federal.</p>
+            </article>
+        </section>
 
-      <article>
-        <h3>Capacidades</h3>
-        <ul>
-          <li>Responde perguntas em linguagem natural</li>
-          <li>Cria, revisa e traduz textos</li>
-          <li>Auxilia em programação e estudos</li>
-        </ul>
-      </article>
+        <!-- NOTÍCIAS -->
+        <section class="noticias">
+            <h2>Últimas Notícias</h2>
+            <article class="grade-noticias">
+                <img src="img/politicasSaude.png" alt="Notícia 1">
+                <h3>Novas políticas públicas de saúde</h3>
+                <p>Conheça as novas iniciativas para melhorar o atendimento à população.</p>
+            </article>
+            <article class="grade-noticias">
+                <img src="img/educacaoDigital.jfif" alt="Notícia 2">
+                <h3>Educação em tempos digitais</h3>
+                <p>Veja como o governo está digitalizando escolas e cursos online.</p>
+            </article>
+            <article class="grade-noticias">
+                <img src="images/noticia3.jpg" alt="Notícia 3">
+                <h3>Infraestrutura e mobilidade</h3>
+                <p>Novos investimentos em transporte público e rodovias.</p>
+            </article>
+        </section>
 
-      <article>
-        <h3>Limitações</h3>
-        <ul>
-          <li>Pode gerar respostas incorretas</li>
-          <li>Conhecimento limitado até 2024</li>
-          <li>Não acessa informações em tempo real</li>
-        </ul>
-      </article>
-    </section>
+        <!-- ASIDE INSTITUCIONAL -->
+        <aside class="institucional">
+            <h2>Institucional</h2>
+            <p>Conheça mais sobre o Governo Federal, suas iniciativas e políticas públicas.</p>
+            <a href="#" class="botao2">Saiba mais</a>
+        </aside>
+    </main>
 
-    <footer role="contentinfo">
-      <p>© 2025 ChatGPT — Página inspirada no design original.</p>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Governo Federal. Todos os direitos reservados.</p>
+        <nav>
+            <ul class="links-rodape">
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Acessibilidade</a></li>
+                <li><a href="#">Mapa do site</a></li>
+            </ul>
+        </nav>
     </footer>
-  </main>
 </body>
 </html>
-
-

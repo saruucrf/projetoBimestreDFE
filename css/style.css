@@ -1,139 +1,205 @@
-/* style.css */
+/* ===== VARIÁVEIS ===== */
 :root {
-  --bg: #202123;
-  --sidebar: #343541;
-  --text: #ececf1;
-  --accent: #10a37f;
-  --muted: #a9a9b3;
-  --radius: 12px;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --azul-gov: #0033a0;
+    --amarelo-gov: #ffcc00;
+    --cinza-claro: #f5f5f5;
+    --cinza: #e5e5e5;
+    --preto: #222;
+    --branco: #fff;
+
+    --fonte-primaria: 'Arial', sans-serif;
+    --tamanho-base-fonte: 16px;
+    --espaco-base: 1rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
+    font-family: var(--fonte-primaria);
+    font-size: var(--tamanho-base-fonte);
+    line-height: 1.5;
+    color: var(--preto);
+    background-color: var(--branco);
 }
 
-main {
-  width: 100%;
-  max-width: 800px;
+
+.topo {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--amarelo-gov);
+    color: var(--preto);
+    padding: 0.5rem;
+    z-index: 100;
+    text-decoration: none;
 }
 
-header[role="banner"] {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
+.topo:focus {
+    top: 0;
 }
 
-h1 {
-  font-size: 1.5rem;
-  font-weight: 600;
+
+header {
+    background-color: var(--azul-gov);
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--espaco-base);
 }
 
-abbr[title="ChatGPT"] {
-  color: var(--accent);
-  text-decoration: none;
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
+header nav a {
+    color: var(--branco);
+    text-decoration: none;
 }
 
-nav a {
-  color: var(--text);
-  text-decoration: none;
-  font-size: 0.95rem;
+header nav a:focus,
+header nav a:hover {
+    text-decoration: underline;
 }
 
-nav a:hover {
-  color: var(--accent);
+
+.welcome {
+    background-color: var(--cinza-claro);
+    text-align: center;
+    padding: 5rem 1rem;
 }
 
-.hero {
-  text-align: center;
-  margin-bottom: 2rem;
+.welcome h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.hero h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+.welcome p {
+    margin-bottom: 2rem;
 }
 
-.lead {
-  color: var(--muted);
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+.botao1 {
+    background-color: var(--azul-gov);
+    color: var(--branco);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
 }
 
-form.search {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
+.botao1:hover,
+.botao1:focus {
+    background-color: var(--preto);
+}
+ 
+
+.servicos {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: var(--branco);
+    display: grid;
+    gap: 2rem;
 }
 
-input[type="search"] {
-  width: 70%;
-  padding: 0.75rem 1rem;
-  border-radius: var(--radius);
-  border: 1px solid #444;
-  background: #343541;
-  color: var(--text);
-  font-size: 1rem;
+.grade-servicos {
+    padding: 1.5rem;
+    border: 1px solid var(--cinza);
+    border-radius: 0.5rem;
 }
 
-button[type="submit"] {
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: var(--radius);
-  padding: 0 1rem;
-  font-size: 1.2rem;
-  cursor: pointer;
+.grade-servicos img {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 1rem;
+    border: var(--cinza);
+    border-radius: 0.5rem;
 }
 
-.info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
-  text-align: left;
+
+.noticias {
+    background-color: var(--cinza-claro);
+    padding: 3rem 1rem;
+    text-align: center;
+    display: grid;
+    gap: 2rem;
 }
 
-article {
-  background: #2b2c2f;
-  border-radius: var(--radius);
-  padding: 1rem;
+.grade-noticias img {
+    width: 400px;
+    height: 300px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-article h3 {
-  margin-top: 0;
-  color: var(--accent);
+
+.institucional {
+    background-color: var(--cinza);
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+    text-align: center;
 }
 
-article ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.botao2 {
+    background-color: var(--amarelo-gov);
+    color: var(--preto);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
 }
 
-article li {
-  margin: 0.5rem 0;
-  color: var(--text);
+.botao2:hover,
+.botao2:focus {
+    background-color: var(--preto);
+    color: var(--branco);
 }
+
 
 footer {
-  text-align: center;
-  margin-top: 2rem;
-  color: var(--muted);
-  font-size: 0.9rem;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.links-rodape {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+footer a:focus,
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 600px) {
+    .servicos,
+    .noticias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .servicos,
+    .noticias {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .welcome {
+        padding: 6rem 2rem;
+    }
 }
