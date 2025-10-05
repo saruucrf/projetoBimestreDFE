@@ -100,7 +100,7 @@ header nav a:hover {
 }
  
 
-.servicos {
+.servicos{ 
     padding: 3rem 1rem;
     text-align: center;
     background-color: var(--branco);
@@ -108,15 +108,30 @@ header nav a:hover {
     gap: 2rem;
 }
 
+.servicos h2 {
+    grid-column: 1 / -1;   /* Faz o título ocupar toda a largura da grid */
+    text-align: center;
+    margin-bottom: 1rem;
+    }
+
 .grade-servicos {
     padding: 1.5rem;
     border: 1px solid var(--cinza);
     border-radius: 0.5rem;
+    background-radius:var(--cinza-claro);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.grade-servicos:hover {
+    transform: translateY(-5px);
+
 }
 
 .grade-servicos img {
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     margin-bottom: 1rem;
     border: var(--cinza);
     border-radius: 0.5rem;
