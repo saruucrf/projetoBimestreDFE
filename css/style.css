@@ -1,0 +1,139 @@
+/* style.css */
+:root {
+  --bg: #202123;
+  --sidebar: #343541;
+  --text: #ececf1;
+  --accent: #10a37f;
+  --muted: #a9a9b3;
+  --radius: 12px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+}
+
+header[role="banner"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+abbr[title="ChatGPT"] {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+form.search {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+input[type="search"] {
+  width: 70%;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #444;
+  background: #343541;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  text-align: left;
+}
+
+article {
+  background: #2b2c2f;
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+article h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+article ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+article li {
+  margin: 0.5rem 0;
+  color: var(--text);
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
