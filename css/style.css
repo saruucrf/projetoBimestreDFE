@@ -27,6 +27,23 @@ body {
     background-color: var(--branco);
 }
 
+.pular-principal {
+  position: absolute;
+  left: -999px;
+}
+
+.pular-principal:focus {
+  left: 10px;
+  top: 10px;
+  background: var(--amarelo-gov);
+  color: var(--preto);
+  padding: 6px 10px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+
+
 
 header {
     background-color: var(--azul-gov);
@@ -234,6 +251,11 @@ footer a {
 footer a:focus,
 footer a:hover {
     text-decoration: underline;
+}
+
+a:focus {
+    outline: 3px solid var(--amarelo-gov);
+    outline-offset: 4px;
 }
 
 
